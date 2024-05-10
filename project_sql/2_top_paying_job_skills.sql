@@ -20,6 +20,7 @@ WITH top_paying_jobs AS(
         job_title_short = 'Data Analyst' AND
         job_location = 'Anywhere' AND
         salary_year_avg IS NOT NULL
+    ORDER BY salary_year_avg DESC
     LIMIT 10
 )
 
